@@ -15,7 +15,7 @@ var _componentsPokeTable = require('./components/PokeTable');
 
 var _componentsPokeTable2 = _interopRequireDefault(_componentsPokeTable);
 
-var pokemons = [{ number: 1, name: 'Bulbasaur' }, { number: 2, name: 'Ivysaur' }, { number: 3, name: 'Venusaur' }];
+var pokemons = [{ number: 1, name: 'Bulbasaur' }, { number: 2, name: 'ivasour' }, { number: 3, name: 'Venusaur' }];
 
 _react2['default'].render(_react2['default'].createElement(_componentsPokeTable2['default'], { pokemons: pokemons }), document.getElementById('container'));
 
@@ -119,6 +119,8 @@ var PokeRow = (function (_React$Component) {
 
   return PokeRow;
 })(_react2['default'].Component);
+
+PokeRow.defaultProps = { name: 'no hay pokemon' };
 
 exports['default'] = PokeRow;
 module.exports = exports['default'];

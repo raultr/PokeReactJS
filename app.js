@@ -7,7 +7,7 @@ import PokeTable from './components/PokeTable';
 
 var pokemons = [
   { number: 1, name: 'Bulbasaur' },
-  { number: 2, name: 'Ivysaur' },
+  { number: 2, name: 'ivasour' },
   { number: 3, name: 'Venusaur' }
 ];
 

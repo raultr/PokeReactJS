@@ -5,7 +5,7 @@
 import React from 'react';
 import PokeAvatar from './PokeAvatar';
 
-export default class PokeRow extends React.Component {
+class PokeRow extends React.Component {
   render() {
     return <li className="pokerow">
       <PokeAvatar number={this.props.number} />
@@ -13,3 +13,7 @@ export default class PokeRow extends React.Component {
     </li>
   }
 }
+
+PokeRow.defaultProps = {name: "no hay pokemon" };
+
+export default PokeRow;
