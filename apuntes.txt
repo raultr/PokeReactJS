@@ -1,0 +1,19 @@
+Se crea el archivo package.json para poder instalar los modulos indicados
+
+instalacion de un modulo:
+	npm install --save react //--save guarda la dependencia en el el package.json
+
+Browserify:
+	Agrupa dependencias propias y terceros
+		instalar browserify:
+			npm install --save browserify 
+	Usarlo:
+		Se agrega la siguiente linea en el package.json
+			  "scripts": {
+  				"build": "browserify app.js > build.js -t babelify"
+  			  }
+  
+  		y con "npm run build" corre el script build
+
+Babelify:
+	Transpila el codigo de es6 a javascript comun
