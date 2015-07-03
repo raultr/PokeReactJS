@@ -17,3 +17,36 @@ Browserify:
 
 Babelify:
 	Transpila el codigo de es6 a javascript comun
+
+
+ReactJS:
+   // Definir valores por defecto
+	   PokeRow.defaultProps = {name: "no hay pokemon" }; 
+
+   //Recibe un objeto con las nuevas propiedades y este llama al metodo render
+   		setState()  
+   		setSatate(nuevosDatos, callback)
+		//Las prop no van en el state
+		//Los datos calculados no van en el state
+
+   //Constructores
+      es6  utiliza constructor(props){super(props); this.sttate = {count: 0}}
+
+  //Ciclo de vida de los components
+  	Mounting:
+  		componentWillMount() // Se ejecuta antes de que se comente dentro del DOM el component
+		componentDidMount() // Se ejecuta cuando el DOM se monto(aqui se pueden agregar librerias de terceros), y se pueden poner intervalos de tiempo.
+
+  	Updating
+  	    componentWillReceiveProps(nextProps) // Se ejecuta cuando recibe nuevas propiedades, permite definir nuevas cosas en el estado, nextProps tiene el nuevo valor y this.props el valor antes del cambio
+  	    shouldComponentUpdate(nextProps, nextState) // permite saber si algun componente debe actualizarce.
+  	    componentWillUpdate(nextProps, nextState) // Se utiliza para preparar algo antes de llamar a render
+  	    componentDidUpdate(prevProps,prevState) // Cuando el componente ya se actualizo
+
+  	UnMounting
+  		compnentWillUnmount() // Limpiar cualquier referencia de memoria,evenhandler un time etc.
+
+   //Mixins
+   	  Permiten reutilizar la logica
+
+   
