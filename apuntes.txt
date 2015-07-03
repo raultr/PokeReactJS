@@ -4,7 +4,7 @@ instalacion de un modulo:
 	npm install --save react //--save guarda la dependencia en el el package.json
 
 Browserify:
-	Agrupa dependencias propias y terceros
+	Nos permite gestionar dependencias en forma de módulos del lado del cliente
 		instalar browserify:
 			npm install --save browserify 
 	Usarlo:
@@ -15,8 +15,18 @@ Browserify:
   
   		y con "npm run build" corre el script build
 
+Watchify:
+    Vigila los cambios que ocurren en nuestro codigo y genera el js cada que hay un cambio.
+          npm install -g watchify
+          uso:
+                 watchify index.js -o bundle.js
+
 Babelify:
 	Transpila el codigo de es6 a javascript comun
+
+UID:
+  Genera id unicas
+      npm install --save uid
 
 
 ReactJS:
@@ -50,3 +60,7 @@ ReactJS:
    	  Permiten reutilizar la logica
 
    
+//**** Montar el servidor
+
+instalar los paquetes:
+   npm install --save express socket.io socket.io-client babel

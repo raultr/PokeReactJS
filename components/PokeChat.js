@@ -11,12 +11,15 @@ export default class PokeChat extends React.Component {
 	// 	this.state = {messages: [] };
 	// }
 	render(){
-		return <ul classNAme='pokechat'>
+		return <ul className='pokechat'>
 		    {
 				this.props.messages.map((message)=>{
-					return <PokeMessage message = {message} />
+					//debugger;
+					return <PokeMessage key={message.id} message = {message} />
 				})
 			}
 		</ul>
 	}
 }
+
+PokeChat.defaultProps = {messages: []};
